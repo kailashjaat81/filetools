@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FileTools - Free Image PDF & Document Tools</title>
+
+<meta name="description"
+content="Free online image, PDF and document tools. Resize, compress and convert files online.">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">FileTools</div>
+
+    <nav>
+        <a href="#image">Image</a>
+        <a href="#pdf">PDF</a>
+        <a href="#docs">DOC/DOCX</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <h1>Free Image, PDF & Document Tools</h1>
+
+    <p>
+        Resize, compress and convert your files online.
+        Fast, simple and free.
+    </p>
+
+</section>
+
+
+<main>
+
+<div class="ad">ADVERTISEMENT</div>
+
+
+<!-- IMAGE -->
+
+<section id="image">
+
+<h2>🖼️ Image Tools</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Image Resize</h3>
+<p>Change image width and height.</p>
+<button onclick="imageTool('resize')">Open</button>
+</div>
+
+<div class="card">
+<h3>Image Compress</h3>
+<p>Reduce image file size.</p>
+<button onclick="imageTool('compress')">Open</button>
+</div>
+
+<div class="card">
+<h3>JPG ↔ PNG</h3>
+<p>Convert JPG and PNG.</p>
+<button onclick="imageTool('convert')">Open</button>
+</div>
+
+<div class="card">
+<h3>JPG/PNG → WebP</h3>
+<p>Convert image to WebP.</p>
+<button onclick="imageTool('webp')">Open</button>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- PDF -->
+
+<section id="pdf">
+
+<h2>📄 PDF Tools</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>PDF → JPG</h3>
+<p>Convert PDF pages to JPG.</p>
+<button onclick="pdfTool('pdfToJpg')">Open</button>
+</div>
+
+<div class="card">
+<h3>JPG → PDF</h3>
+<p>Create PDF from images.</p>
+<button onclick="pdfTool('jpgToPdf')">Open</button>
+</div>
+
+<div class="card">
+<h3>Merge PDF</h3>
+<p>Combine multiple PDF files.</p>
+<button onclick="pdfTool('merge')">Open</button>
+</div>
+
+<div class="card">
+<h3>Split PDF</h3>
+<p>Extract selected pages.</p>
+<button onclick="pdfTool('split')">Open</button>
+</div>
+
+<div class="card">
+<h3>Compress PDF</h3>
+<p>Reduce PDF file size.</p>
+<button onclick="pdfTool('compress')">Open</button>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- DOC -->
+
+<section id="docs">
+
+<h2>📝 DOC/DOCX Tools</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>DOCX → PDF</h3>
+<p>Convert Word to PDF.</p>
+<button onclick="docTool('docxPdf')">Open</button>
+</div>
+
+<div class="card">
+<h3>PDF → DOCX</h3>
+<p>Convert PDF text to Word.</p>
+<button onclick="docTool('pdfDocx')">Open</button>
+</div>
+
+<div class="card">
+<h3>DOCX → TXT</h3>
+<p>Extract text from DOCX.</p>
+<button onclick="docTool('docxTxt')">Open</button>
+</div>
+
+<div class="card">
+<h3>TXT → DOCX</h3>
+<p>Create Word from TXT.</p>
+<button onclick="docTool('txtDocx')">Open</button>
+</div>
+
+</div>
+</section>
+
+
+
+<div class="ad">ADVERTISEMENT</div>
+
+
+<!-- WORKSPACE -->
+
+<div id="workspace" class="workspace">
+
+<h2 id="toolTitle"></h2>
+
+<div id="toolBody"></div>
+
+</div>
+
+
+</main>
+
+
+<footer>
+
+<p>© 2026 FileTools</p>
+
+<p>Free Online Image, PDF & Document Tools</p>
+
+</footer>
+
+
+
+<!-- PDF LIB -->
+
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+
+
+<!-- PDF JS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+
+<!-- MAMMOTH DOCX -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.11.0/mammoth.browser.min.js"></script>
+
+
+<!-- YOUR JS -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
